@@ -21,6 +21,12 @@
 		7F9A204418BC496100A60B13 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F9A202618BC496000A60B13 /* UIKit.framework */; };
 		7F9A204C18BC496100A60B13 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F9A204A18BC496100A60B13 /* InfoPlist.strings */; };
 		7F9A204E18BC496100A60B13 /* LinkingStoryboardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F9A204D18BC496100A60B13 /* LinkingStoryboardTests.m */; };
+		7F9A205918BC499B00A60B13 /* LSLinkedStoryboardSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F9A205818BC499B00A60B13 /* LSLinkedStoryboardSegue.m */; };
+		7F9A205C18BC49BB00A60B13 /* Sub1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F9A205B18BC49BB00A60B13 /* Sub1.storyboard */; };
+		7F9A205E18BC49CE00A60B13 /* Sub2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F9A205D18BC49CE00A60B13 /* Sub2.storyboard */; };
+		7F9A206218BC4B4100A60B13 /* LSSub1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F9A206118BC4B4100A60B13 /* LSSub1ViewController.m */; };
+		7F9A206518BC4B7100A60B13 /* LSSub2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F9A206418BC4B7100A60B13 /* LSSub2ViewController.m */; };
+		7F9A206818BC4B7F00A60B13 /* LSMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F9A206718BC4B7F00A60B13 /* LSMainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +59,16 @@
 		7F9A204918BC496100A60B13 /* LinkingStoryboardTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LinkingStoryboardTests-Info.plist"; sourceTree = "<group>"; };
 		7F9A204B18BC496100A60B13 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7F9A204D18BC496100A60B13 /* LinkingStoryboardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinkingStoryboardTests.m; sourceTree = "<group>"; };
+		7F9A205718BC499B00A60B13 /* LSLinkedStoryboardSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSLinkedStoryboardSegue.h; sourceTree = "<group>"; };
+		7F9A205818BC499B00A60B13 /* LSLinkedStoryboardSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSLinkedStoryboardSegue.m; sourceTree = "<group>"; };
+		7F9A205B18BC49BB00A60B13 /* Sub1.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Sub1.storyboard; sourceTree = "<group>"; };
+		7F9A205D18BC49CE00A60B13 /* Sub2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Sub2.storyboard; sourceTree = "<group>"; };
+		7F9A206018BC4B4100A60B13 /* LSSub1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSSub1ViewController.h; sourceTree = "<group>"; };
+		7F9A206118BC4B4100A60B13 /* LSSub1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSSub1ViewController.m; sourceTree = "<group>"; };
+		7F9A206318BC4B7100A60B13 /* LSSub2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSSub2ViewController.h; sourceTree = "<group>"; };
+		7F9A206418BC4B7100A60B13 /* LSSub2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSSub2ViewController.m; sourceTree = "<group>"; };
+		7F9A206618BC4B7F00A60B13 /* LSMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSMainViewController.h; sourceTree = "<group>"; };
+		7F9A206718BC4B7F00A60B13 /* LSMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSMainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,9 +128,10 @@
 		7F9A202818BC496000A60B13 /* LinkingStoryboard */ = {
 			isa = PBXGroup;
 			children = (
+				7F9A205A18BC49A400A60B13 /* Storyboards */,
+				7F9A205F18BC4AE000A60B13 /* Controller */,
 				7F9A203118BC496000A60B13 /* LSAppDelegate.h */,
 				7F9A203218BC496000A60B13 /* LSAppDelegate.m */,
-				7F9A203418BC496000A60B13 /* Main.storyboard */,
 				7F9A203718BC496000A60B13 /* LSViewController.h */,
 				7F9A203818BC496000A60B13 /* LSViewController.m */,
 				7F9A203A18BC496000A60B13 /* Images.xcassets */,
@@ -150,6 +167,31 @@
 				7F9A204A18BC496100A60B13 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7F9A205A18BC49A400A60B13 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				7F9A205718BC499B00A60B13 /* LSLinkedStoryboardSegue.h */,
+				7F9A205818BC499B00A60B13 /* LSLinkedStoryboardSegue.m */,
+				7F9A203418BC496000A60B13 /* Main.storyboard */,
+				7F9A205B18BC49BB00A60B13 /* Sub1.storyboard */,
+				7F9A205D18BC49CE00A60B13 /* Sub2.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		7F9A205F18BC4AE000A60B13 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7F9A206018BC4B4100A60B13 /* LSSub1ViewController.h */,
+				7F9A206118BC4B4100A60B13 /* LSSub1ViewController.m */,
+				7F9A206318BC4B7100A60B13 /* LSSub2ViewController.h */,
+				7F9A206418BC4B7100A60B13 /* LSSub2ViewController.m */,
+				7F9A206618BC4B7F00A60B13 /* LSMainViewController.h */,
+				7F9A206718BC4B7F00A60B13 /* LSMainViewController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,8 +272,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F9A203B18BC496000A60B13 /* Images.xcassets in Resources */,
+				7F9A205C18BC49BB00A60B13 /* Sub1.storyboard in Resources */,
 				7F9A202D18BC496000A60B13 /* InfoPlist.strings in Resources */,
 				7F9A203618BC496000A60B13 /* Main.storyboard in Resources */,
+				7F9A205E18BC49CE00A60B13 /* Sub2.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,8 +294,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F9A205918BC499B00A60B13 /* LSLinkedStoryboardSegue.m in Sources */,
+				7F9A206518BC4B7100A60B13 /* LSSub2ViewController.m in Sources */,
 				7F9A202F18BC496000A60B13 /* main.m in Sources */,
 				7F9A203318BC496000A60B13 /* LSAppDelegate.m in Sources */,
+				7F9A206218BC4B4100A60B13 /* LSSub1ViewController.m in Sources */,
+				7F9A206818BC4B7F00A60B13 /* LSMainViewController.m in Sources */,
 				7F9A203918BC496000A60B13 /* LSViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
